@@ -506,6 +506,10 @@ void options_sub_gamepad_controls(MenuData *parent, void *arg) {
 		bind_gpbinding(CONFIG_GAMEPAD_KEY_BOMB)
 	);
 
+	add_menu_entry(m, "Power Surge", do_nothing,
+		bind_gpbinding(CONFIG_GAMEPAD_KEY_SPECIAL)
+	);
+
 	add_menu_separator(m);
 
 	add_menu_entry(m, "Skip dialog", do_nothing,
@@ -613,6 +617,10 @@ void options_sub_controls(MenuData *parent, void *arg) {
 
 	add_menu_entry(m, "Spell", do_nothing,
 		bind_keybinding(CONFIG_KEY_BOMB)
+	);
+
+	add_menu_entry(m, "Power Surge", do_nothing,
+		bind_keybinding(CONFIG_KEY_SPECIAL)
 	);
 
 	add_menu_separator(m);
